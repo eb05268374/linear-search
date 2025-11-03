@@ -10,7 +10,7 @@ def linear_search(list_to_search, target):
     cool_print("Item not found.\n", 0.5) # else not found state so
 
 def linear_search_2d(list_to_search, target):
-    for i in range(0, len(list_to_search)): # basically the same as teh last one but using a 2d list instead
+    for i in range(0, len(list_to_search)): # basically the same as the last one but using a 2d list instead
         for j in range(0, len(list_to_search[i])):
             if list_to_search[i][j] == target:
                 cool_print(f"Item found at [{i}][{j}].\n", 0.5)
@@ -33,3 +33,4 @@ lst_2d = [[random.randint(0,1000) for _ in range(1000)] for _ in range(1000)]
 
 cool_print("Target:", 0.1)
 linear_search_count_all(lst_1d, int(input()))
+
